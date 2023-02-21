@@ -40,38 +40,38 @@
         <form action="./show_data.html" method="get" id="submit">
             <div>
                 <label for="fname">Player's First Name:</label>
-                <input type="text" id="fname" name="fname" value="">
+                <input type="text" id="fname" name="fname" value="" required>
             </div>
             <div>
                 <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" value="">
+                <input type="text" id="lname" name="lname" value="" required>
             </div>
             <div>
                 <label for="street">Street Address:</label>
-                <input type="text" id="street" name="street" value="">
+                <input type="text" id="street" name="street" value="" required>
             </div>
             <div> <label for="city">City:</label>
-                <input type="text" id="city" name="city" value="">
+                <input type="text" id="city" name="city" value="" required>
             </div>
             <div> <label for="zipcode">Zip Code:</label>
-                <input type="number" id="zipcode" name="zip code" value="">
+                <input type="number" id="zipcode" name="zip code" value="" required>
             </div>
             <div> <label for="birth">Birth Date:</label><br>
-                <input type="date" id="birth" name="birth" value="">
+                <input type="date" id="birth" name="birth" value="" required>
             </div>
             <div>
                 <!-- Estilo Radio -->
-                <!-- <label for="Gender">Gender:</label><br>
-                <input type="radio" id="male" name="male" value="Male">
-                <label for="male"> Male</label><br>
-                <input type="radio" id="female" name="female" value="Female">
-                <label for="female"> Female</label><br> -->
-
                 <label for="Gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="gender"> Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="gender"> Female</label><br>
+
+                <!-- <label for="Gender">Gender:</label><br>
                 <input list="Gender">
                 <datalist id="Gender">
                     <option value="Female"></option>
-                    <option value="Male"></option>
+                    <option value="Male"></option> -->
             </div>
             <div>
                 <!-- Estilo checkbox
@@ -94,7 +94,8 @@
                 <h3>Closest school</h3>
             </div>
             <div>
-                <label for="schools"></label><br>
+               <!-- Estilo lista -->
+                <!-- <label for="schools"></label><br>
                 <input list="schools">
                 <datalist id="schools">
                     <option value="AJ Katzenmaier"></option>
@@ -103,41 +104,41 @@
                     <option value="Majorie P Hart"></option>
                     <option value="North Elementary"></option>
                     <option value="South Elementary"></option>
-                </datalist>    
-                    <!-- Estilo checkbox
-                    <input type="checkbox" id="School1" name="School1" value="School1">
-                    <label for="School1"> AJ Katzenmaier</label><br>
+                </datalist>     -->
+                   
+                    <input type="radio" id="AJ Katzenmaier" name="School" value="AJ Katzenmaier" required>
+                    <label for="School"> AJ Katzenmaier</label><br>
 
-                    <input type="checkbox" id="School2" name="School2" value="School2">
-                    <label for="School2"> Greenbay</label><br>
+                    <input type="radio" id="Greenbay" name="School" value="Greenbay" required>
+                    <label for="School"> Greenbay</label><br>
 
-                    <input type="checkbox" id="School3" name="School3" value="School3">
-                    <label for="School3"> Howard A Yeager</label><br>
+                    <input type="radio" id="Howard A Yeager" name="School" value="Howard A Yeager" required>
+                    <label for="School"> Howard A Yeager</label><br>
 
-                    <input type="checkbox" id="School4" name="School4" value="School4">
-                    <label for="School4">Majorie P Hart</label><br>
+                    <input type="radio" id="Majorie P Hart" name="School" value="Majorie P Hart" required>
+                    <label for="School">Majorie P Hart</label><br>
 
-                    <input type="checkbox" id="School5" name="School5" value="School5">
-                    <label for="School5">North Elementary</label><br>
+                    <input type="radio" id="North Elementary" name="School" value="North Elementary" required>
+                    <label for="School">North Elementary</label><br>
 
-                    <input type="checkbox" id="School6" name="School6" value="School6">
-                    <label for="School6">South Elementary</label><br> -->
+                    <input type="radio" id="South Elementary" name="School" value="South Elementary" required>
+                    <label for="School">South Elementary</label><br>
             </div>
 
             <div>
                 <h2>What position(s) do you normally play? (Check all that apply)</h2>
             </div>
             <div>
-                <input type="checkbox" id="position1" name="position1" value="position1">
+                <input type="checkbox" id="position1" name="position1" value="position1" required>
                 <label for="position1"> Forward</label><br>
 
-                <input type="checkbox" id="position2" name="position2" value="position2">
+                <input type="checkbox" id="position2" name="position2" value="position2" required>
                 <label for="position2"> Defense</label><br>
 
-                <input type="checkbox" id="position3" name="position3" value="position3">
+                <input type="checkbox" id="position3" name="position3" value="position3" required>
                 <label for="position3"> Midfield</label><br>
 
-                <input type="checkbox" id="position4" name="position4" value="position4">
+                <input type="checkbox" id="position4" name="position4" value="position4" required>
                 <label for="position4">Goalkeeper</label><br>
 
             </div>
@@ -145,7 +146,26 @@
                 <div>
                     <h2>Uniform Size</h2>
                 </div>
-                <label for="uniforms"></label><br>
+
+                <input type="radio" id="YouthSmall" name="uniform" value="Youth Small" required>
+                <label for="Uniform">Youth Small</label><br>
+
+                <input type="radio" id="YouthMedium" name="uniform" value="Youth Medium" required>
+                <label for="Uniform">Youth Medium</label><br>
+
+                <input type="radio" id="YouthLarge" name="uniform" value="Youth Large" required>
+                <label for="Uniform">Youth Large</label><br>
+
+                <input type="radio" id="Small" name="uniform" value="Small" required>
+                <label for="Uniform">Small</label><br>
+
+                <input type="radio" id="Medium" name="unifrom" value="Medium" required>
+                <label for="Uniform">Medium</label><br>
+
+                <input type="radio" id="Large" name="uniform" value="Large" required>
+                <label for="Uniform">Large</label><br>
+                <!-- Estilo tabla
+                    <label for="uniforms"></label><br>
                 <input list="uniforms">
                 <datalist id="uniforms">
                     <option value="Youth Small"></option>
@@ -155,7 +175,7 @@
                     <option value="Medium"></option>
                     <option value="Large"></option>
                     <option value="Extra Large"></option>
-                </datalist>   
+                </datalist>    -->
             </div>
             <div>
                 <h2>Permission to play</h2>
@@ -172,12 +192,12 @@
                 </p>
             </div>
             <div>
-                <div><input type="checkbox" id="firma" name="firma" value="firma">
+                <div><input type="checkbox" id="firma" name="firma" value="firma" required>
                     <label for="firma">Parent/Guardian signature:</label><br>
                 </div>
                 <div>
                     <label for="date">Date:</label><br>
-                    <input type="date" id="date" name="date" value="">
+                    <input type="date" id="date" name="date" value="" required>
                 </div>
             </div>
             <button class="button" type="submit" form="submit" value="submit" >Submit</button>

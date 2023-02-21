@@ -92,7 +92,7 @@ li a:hover:not(.active) {
 
 .textos{
   display: inline;
-  font-size: medium;
+  font-size: small;
   font-weight: normal;
 }
 
@@ -175,7 +175,7 @@ input[type=number]:focus{
 }
 
 .regsitration{
-  background-color: azure;
+  background-color: tan;
 }
 
 
